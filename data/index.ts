@@ -241,14 +241,14 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    name: 'GitHub',
+    url: 'https://github.com/will-frankland'
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/will-frankland/'
   },
 ];
 
