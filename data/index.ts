@@ -255,23 +255,27 @@ export const socialMedia = [
 export const techStackItems = [
   {
     name: 'TypeScript',
-    logo: '/ts.svg'
+    logo: '/ts.svg',
+    nameImg: '/ts-name.svg'
   },
   {
     name: 'NextJs',
-    logo: '/next.svg'
+    logo: '/next.svg',
+    nameImg: ''
   },
   {
     name: 'ReactJs',
     logo: '/re.svg'
   },
   {
-    name: 'NodeJs',
-    logo: '/node.svg'
+    name: '',
+    logo: '/node.svg',
+    nameImg: ''
   },
   {
-    name: 'MongoDB',
-    logo: '/mongo.svg'
+    name: '',
+    logo: '/mongo-name.svg',
+    nameImg: ''
   },
   {
     name: 'PostgreSQL',

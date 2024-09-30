@@ -114,7 +114,9 @@ export const BentoGridItem = ({
           {id === 1 && (
             <div className="flex flex-col">
               {/* Title section */}
-              <h2 className="text-lg lg:text-2xl font-bold mb-5 md:mb-2">My tech stack:</h2>
+              <h2 className="text-lg lg:text-2xl font-bold mb-5 md:mb-2">
+                My tech stack:
+              </h2>
 
               {/* Tech stack logos section */}
               <div className="flex flex-wrap gap-3 lg:gap-4 w-full justify-center mt-4">
@@ -122,17 +124,28 @@ export const BentoGridItem = ({
                 {techStackItems.map((item, idx) => (
                   <span
                     key={idx}
-                    className="flex items-center gap-2 py-2 lg:py-8 lg:px-10 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] min-w-[120px] flex-grow max-w-[300px]"
+                    className="flex items-center justify-center gap-2 py-2 lg:py-8 lg:px-10 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] min-w-[120px] flex-grow max-w-[300px]"
                   >
                     {/* Logo on the left */}
                     <Image
                       src={item.logo}
                       alt={item.name}
-                      width={30}
-                      height={30}
+                      width={50}
+                      height={50}
                     />
-                    {/* Centered text */}
-                    <span className="flex-1 text-center">{item.name}</span>
+                    {item.nameImg ? (
+                      <Image
+                        src={item.nameImg}
+                        alt={item.name}
+                        width={30}
+                        height={30}
+                      />
+                    ) : (
+                      <div>
+                        {/* Centered text */}
+                        <span className="flex-1 text-center">{item.name}</span>
+                      </div>
+                    )}
                   </span>
                 ))}
               </div>
