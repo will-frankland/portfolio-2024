@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
+import DownloadResumeBtn from "@/components/ui/DownloadResumeBtn";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 
@@ -16,9 +17,12 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects />
-        <Clients />
+        {/* <Clients /> */}
         <Experience />
-        <Approach />
+        <div className="col-span-full flex justify-center mb-10">
+          <DownloadResumeBtn />
+        </div>
+        {/* <Approach /> */}
         <Footer />
       </div>
     </main>
