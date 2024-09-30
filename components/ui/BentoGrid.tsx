@@ -70,7 +70,7 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
-        <div className="w-full h-full absolute">
+        <div className="absolute right-0 -bottom-5">
           {img && (
             <img
               src={img}
@@ -79,7 +79,10 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        <div
+        <div>
+          {id === 5 && <GlobeDemo />}
+        </div>
+        {/* <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
           }`}
@@ -88,12 +91,14 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              className={"object-cover object-center w-full h-full"}
+              className="object-cover object-center w-full h-full"
             />
           )}
-        </div>
+        </div> */}
         {id === 6 && (
-          <BackgroundGradientAnimation />
+          <BackgroundGradientAnimation>
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+          </BackgroundGradientAnimation>
         )}
         <div
           className={cn(
@@ -101,49 +106,33 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
+          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 mb-2">
+            {title}
+          </div>
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
-            {title}
-          </div>
 
-          {id === 2 && <GlobeDemo />}
+          {/* {id === 2 && <GlobeDemo />} */}
           {id === 1 && (
             <div className="flex flex-col">
-              {/* Title section */}
-              <h2 className="text-lg lg:text-2xl font-bold mb-5 md:mb-2">
-                My tech stack:
-              </h2>
-
               {/* Tech stack logos section */}
               <div className="flex flex-wrap gap-3 lg:gap-4 w-full justify-center mt-4">
                 {/* Tech stack cards */}
                 {techStackItems.map((item, idx) => (
                   <span
                     key={idx}
-                    className="flex items-center justify-center gap-2 py-2 lg:py-8 lg:px-10 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] min-w-[120px] flex-grow max-w-[300px]"
+                    className="flex flex-col items-center justify-center gap-2 py-2 lg:py-8 lg:px-10 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] min-w-[120px] flex-grow max-w-[300px]"
                   >
-                    {/* Logo on the left */}
                     <Image
                       src={item.logo}
                       alt={item.name}
                       width={50}
                       height={50}
                     />
-                    {item.nameImg ? (
-                      <Image
-                        src={item.nameImg}
-                        alt={item.name}
-                        width={30}
-                        height={30}
-                      />
-                    ) : (
-                      <div>
-                        {/* Centered text */}
-                        <span className="flex-1 text-center">{item.name}</span>
-                      </div>
-                    )}
+                    <div>
+                      <span className="">{item.name}</span>
+                    </div>
                   </span>
                 ))}
               </div>

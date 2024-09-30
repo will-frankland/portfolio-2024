@@ -1,24 +1,14 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Work Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
-  // {
-  //   id: 1,
-  //   title: "I prioritize client collaboration, fostering open communication ",
-  //   description: "",
-  //   className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-  //   imgClassName: "w-full h-full",
-  //   titleClassName: "justify-end",
-  //   img: "/b1.svg",
-  //   spareImg: "",
-  // },
   {
     id: 1,
-    title: "",
+    title: "My tech stack:",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -26,20 +16,10 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
   // {
-  //   id: 3,
-  //   title: "My tech stack",
-  //   description: "I constantly try to improve",
+  //   id: 2,
+  //   title: "Try spinning this globe...",
+  //   description: "",
   //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
   //   imgClassName: "",
   //   titleClassName: "justify-center",
@@ -48,40 +28,40 @@ export const gridItems = [
   // },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "About me:",
+    description: "Hi, I'm Will, a web developer based in Toronto with 1.5 years of experience, following a transition from Mechanical Engineering.\n I moved to Canada from England in 2019 and have been passionate about technology ever since. Outside of coding, you'll find me hiking, at concerts, working out, or cheering for my favorite sports teams, whether it's soccer, NFL, F1, or NBA. I'm also a proud pet parent to Nala and Bear, my cat and dog.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
-    titleClassName: "justify-center",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  // {
+  //   id: 4,
+  //   title: "Tech enthusiast with a passion for development.",
+  //   description: "",
+  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //   imgClassName: "",
+  //   titleClassName: "justify-start",
+  //   img: "/grid.svg",
+  //   spareImg: "/b4.svg",
+  // },
+
+  {
+    id: 5,
+    title: "Try spinning this globe...",
+    description: "Kinda cool, huh?",
+    className: "md:col-span-3 md:row-span-2",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "",
     spareImg: "",
   },
   {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Let's connect!",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-2",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -211,7 +191,7 @@ export const workExperience = [
     id: 1,
     title: "Junior Web Developer",
     company: 'MeaningfulWork Inc - Toronto, ON',
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "I develop scalable web applications using NextJs, TypeScript, NodeJs, and MongoDB. My work includes building APIs, and creating user-friendly UI components following Figma designs.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -219,25 +199,33 @@ export const workExperience = [
     id: 2,
     title: "Bartender",
     company: 'The Loose Moose - Toronto, ON',
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    desc: "Bartending at a high-volume downtown Toronto bar utilizing excellent verbal communication skills to build rapport with guests and deal with a high-pressure environment",
     className: "md:col-span-2", // change to md:col-span-2
-    // thumbnail: "/exp2.svg",
+    thumbnail: "/bartender.svg",
   },
   {
     id: 3,
     title: "Senior Field Service Technician",
     company: "Schedit & Bachmann - Toronto, ON",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "Field Service Technician performing installations and maintenace on ticketing devices and fare-gates around Toronto public transit systems",
     className: "md:col-span-2", // change to md:col-span-2
-    // thumbnail: "/exp3.svg",
+    thumbnail: "/technician.svg",
   },
   {
     id: 4,
     title: "Technical Service Technician",
     company: "Babcock International - Plymouth, UK",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "Amended and updated engineering drawings and datum packs relating to nuclear submarines",
     className: "md:col-span-2",
-    // thumbnail: "/exp4.svg",
+    thumbnail: "/technician.svg",
+  },
+  {
+    id: 5,
+    title: "Process Engineer",
+    company: "SKS (UK) Ltd - Luton, UK",
+    desc: "Managed a variety of installation and process improvement projects with £50,000+ budgets inside a manufacturing facility producing roller bearings",
+    className: "md:col-span-2",
+    thumbnail: "/technician.svg",
   },
 ];
 
@@ -260,7 +248,7 @@ export const techStackItems = [
   {
     name: 'TypeScript',
     logo: '/ts.svg',
-    nameImg: '/ts-name.svg'
+    nameImg: ''
   },
   {
     name: 'NextJs',
@@ -272,17 +260,29 @@ export const techStackItems = [
     logo: '/re.svg'
   },
   {
-    name: '',
+    name: 'NodeJs',
     logo: '/node.svg',
     nameImg: ''
   },
   {
-    name: '',
-    logo: '/mongo-name.svg',
+    name: 'MongoDB',
+    logo: '/mongo.svg',
     nameImg: ''
   },
   {
     name: 'PostgreSQL',
     logo: '/postgreSQL.svg'
+  },
+  {
+    name: 'HTML',
+    logo: '/html.svg'
+  },
+  {
+    name: 'CSS',
+    logo: '/css.svg'
+  },
+  {
+    name: 'GitHub',
+    logo: '/github.png'
   },
 ];
