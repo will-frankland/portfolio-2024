@@ -1,10 +1,7 @@
 "use client"
-import React, { useState } from "react";
-import Lottie from "react-lottie";
-import animationData from "@/data/confetti.json";
+import React from "react";
 
 const DownloadResumeBtn = () => {
-  const [copied, setCopied] = useState(false);
   return (
     <div>
       <a
@@ -14,16 +11,6 @@ const DownloadResumeBtn = () => {
       >
         Download Resume
       </a>
-      {/* <Lottie
-        options={{
-          loop: copied,
-          autoplay: copied,
-          animationData: animationData,
-          rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice",
-          },
-        }}
-      /> */}
     </div>
   );
 };

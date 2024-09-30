@@ -1,7 +1,6 @@
 import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/MovingBorders";
-import DownloadResumeBtn from "./ui/DownloadResumeBtn";
 
 const Experience = () => {
   return (
