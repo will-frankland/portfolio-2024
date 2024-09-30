@@ -222,7 +222,7 @@ export const workExperience = [
   {
     id: 5,
     title: "Process Engineer",
-    company: "SKS (UK) Ltd - Luton, UK",
+    company: "SKF (UK) Ltd - Luton, UK",
     desc: "Managed a variety of installation and process improvement projects with £50,000+ budgets inside a manufacturing facility producing roller bearings",
     className: "md:col-span-2",
     thumbnail: "/technician.svg",
