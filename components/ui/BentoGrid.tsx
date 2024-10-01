@@ -80,19 +80,6 @@ export const BentoGridItem = ({
         <div>
           {id === 5 && <GlobeDemo />}
         </div>
-        {/* <div
-          className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
-          }`}
-        >
-          {spareImg && (
-            <img
-              src={spareImg}
-              alt={spareImg}
-              className="object-cover object-center w-full h-full"
-            />
-          )}
-        </div> */}
         {id === 6 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
@@ -120,7 +107,7 @@ export const BentoGridItem = ({
                 {techStackItems.map((item, idx) => (
                   <span
                     key={idx}
-                    className="flex flex-col items-center justify-center gap-2 py-2 lg:py-8 lg:px-10 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] min-w-[120px] flex-grow max-w-[300px]"
+                    className="flex flex-col items-center justify-center gap-2 py-2 lg:py-8 lg:px-10 px-3 text-xs lg:text-base opacity-75 lg:opacity-100 rounded-lg text-center bg-[#10132E] min-w-[120px] flex-grow max-w-[300px]"
                   >
                     <img
                       src={item.logo}
