@@ -16,16 +16,6 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  // {
-  //   id: 2,
-  //   title: "Try spinning this globe...",
-  //   description: "",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-  //   imgClassName: "",
-  //   titleClassName: "justify-center",
-  //   img: "",
-  //   spareImg: "",
-  // },
   {
     id: 3,
     title: "About me:",
@@ -36,17 +26,6 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  // {
-  //   id: 4,
-  //   title: "Tech enthusiast with a passion for development.",
-  //   description: "",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-  //   imgClassName: "",
-  //   titleClassName: "justify-start",
-  //   img: "/grid.svg",
-  //   spareImg: "/b4.svg",
-  // },
-
   {
     id: 5,
     title: "Try spinning this globe...",
@@ -82,7 +61,7 @@ export const projects = [
     id: 2,
     title: "Horizon Banking",
     des: "Horizon banking app allows users to connect their accounts via Plaid and Dwolla securely and safely. Once connected users can transfer funds between accounts, manage their spending and saving with accurate and live spending information and connect more banks and accounts",
-    img: "/screenshots/homepage-banking.png",
+    img: "/screenshots/banking_app.png",
     iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/appwrite.svg"],
     link: "https://banking-app-lac.vercel.app/sign-in",
   },
