@@ -17,32 +17,32 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    id: 3,
+    id: 2,
     title: "About me:",
     description: "Hi, I'm Will, a web developer based in Toronto with 1.5 years of experience, following a transition from Mechanical Engineering.\n I moved to Canada from England in 2019 and have been passionate about technology ever since. Outside of coding, you'll find me hiking, at concerts, working out, or cheering for my favorite sports teams, whether it's soccer, NFL, F1, or NBA. I'm also a proud pet parent to Nala and Bear, my cat and dog.",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 md:col-span-6 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
     spareImg: "",
   },
   {
-    id: 5,
+    id: 3,
     title: "Try spinning this globe...",
     description: "Kinda cool, huh?",
-    className: "md:col-span-3 md:row-span-2",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "",
     spareImg: "",
   },
   {
-    id: 6,
+    id: 4,
     title: "Let's connect!",
-    description: "",
-    className: "lg:col-span-2 md:col-span-2",
+    description: "Send me an email:",
+    className: "lg:col-span-2 md:col-span-6 md:row-span-2",
     imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName: "justify-center text-center",
     img: "",
     spareImg: "",
   },
@@ -262,6 +262,6 @@ export const techStackItems = [
   },
   {
     name: 'GitHub',
-    logo: '/github.png'
+    logo: '/github.svg'
   },
 ];
