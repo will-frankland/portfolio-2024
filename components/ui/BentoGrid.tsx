@@ -85,14 +85,12 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-1 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          {id === 4 && (
-            <BackgroundGradientAnimation>
-              <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-            </BackgroundGradientAnimation>
-          )}
+          {/* {id === 4 && (
+            <BackgroundGradientAnimation />
+          )} */}
           {id === 4 && (
             <div className="mt-5 relative">
               <div className="font-sans font-bold text-lg lg:text-3xl z-10 mb-2">
